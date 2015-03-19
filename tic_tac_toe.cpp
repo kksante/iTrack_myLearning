@@ -51,8 +51,8 @@ void instructions (){
   cout << "Welcome to the game of Tic_Tac_Toe." << endl;
   cout << "There are two game pieces for two players." << endl; 
   cout << "First player has an [X] and second play an [O]." << endl;
-  cout << "Make a play by choosing an unoccupied cell number to placee your game piece" << endl;
-  cout << "Goal: Win the game by three of your game pieces in a row on the game board" << endl;
+  cout << "Make a play by choosing an unoccupied cell number to place your game piece" << endl;
+  cout << "Goal: Win the game by placing three of your game pieces in a row on the game board" << endl;
   cout << "| 0 | 1 | 2 |" << endl;
   cout << "| 3 | 4 | 5 |" << endl;
   cout << "| 6 | 7 | 8 |" << endl;
