@@ -113,7 +113,7 @@ bool validate_Input(string string_Input){
 
                                
                 if(board[input] == 'X' || board[input] == 'O'){
-                 cout << "This cell is already selected. Select another cell Yo!" << endl;                  
+                 cout << "This cell is already selected. Select another cell." << endl;                  
                 }
                 else return true;
             }
@@ -172,10 +172,12 @@ bool check_gameOver(){
         
         
         for (int i = 0; i < num_squares; i++){
-                gameOver = true; 
+               
                 if (!(board[i] == 'X' || board[i] == 'O')){
                         gameOver = false;
                         break;
+                } else {
+                        gameOver = true;
                 }
                
         }
@@ -216,8 +218,7 @@ int main(){
         load_gameBoard (num_squares);
         
         gameOver = false;
-        
-        if (players_Turn == 0) players_Turn = gamePiece1;
+        update_playerturn();
 
         while (gameOver == false){
                 play_Game();
