@@ -8,7 +8,6 @@
 #include <sstream>
 #include <regex>
 
-
 using namespace std;
 
 
@@ -17,7 +16,7 @@ char gamePiece1 = 'X';
 char gamePiece2 = 'O';
 char players_Turn; //used to assign player's turn to play.
 bool gameOver; //checks status of the game
-char winner = '0';
+char winner = '0'; //tracks piece which won the game
 
 int grid_size = 3;
 int num_squares = grid_size * grid_size; // number of squares on game board
@@ -167,8 +166,7 @@ void play_Game(){
 }
 
 
-bool check_gameOver(){
-        
+bool check_gameOver(){        
         
         
         for (int i = 0; i < num_squares; i++){
