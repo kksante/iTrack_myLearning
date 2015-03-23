@@ -103,12 +103,12 @@ void  update_playerturn(){
 bool validate_Input(string string_Input){
 
   int input = 0;
+ 
   regex cell_number("[0-8]");
   
   if (regex_match(string_Input, cell_number) == true){
     
-    stringstream myStream(string_Input);
-    myStream >> input;
+          input = stoi(string_Input, nullptr, 10);
 
                                
                 if(board[input] == 'X' || board[input] == 'O'){
